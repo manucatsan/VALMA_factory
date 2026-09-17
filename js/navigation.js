@@ -1,0 +1,1 @@
+window.VALMA.nav={current:{view:'dashboard'},go:function(view,params,replace){if(!replace)this.history.push({view:this.current.view,params:this.current.params||{}});this.current={view:view,params:params||{}};window.VALMA.render()},back:function(){const h=this.history;if(h.length){this.current=h.pop();window.VALMA.render()}},history:[]};
